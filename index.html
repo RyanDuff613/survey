@@ -8,42 +8,59 @@
     <title>Survey</title>
   </head>
   <body>
-  <form>
-      <select class="form-control" id="beverage">
-        <option value="coffee">Coffee</option>
-        <option value="tea">Tea</option>
-        <option value="kombucha">Kombucha</option>
-        <option value="water">Water</option>
-      </select>
 
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="chocolate" checked>
-          Chocolate
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="vanilla">
-          Vanilla
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="cookiesandcream">
-          Cookies & Cream
-        </label>
-      </div>
+    <form id="theForm">
 
-      <div class="form-group">
-        <label for="born">Date of birth:</label>
-        <input id="born" class="form-control" type="date">
-      </div>
+        <div>
+          <label for="name">enter your name here</label><br>
+          <input id='name' type="text">
+        </div>
 
-      <div class="form-group">
-        <label for="color">What is your favorite color?</label>
-        <input id="color" class="form-control" type="color">
-      </div>
+        <select class="form-control" id="favCar">
+          <option value="lexus">lexus</option>
+          <option value="bmw">bmw</option>
+          <option value="ford">ford</option>
+          <option value="chrysler">chrysler</option>
+        </select>
+
+        <br>
+
+        <div id='favSoda'>
+          <div class="radio">
+            <label for="favSoda">click your preferred soda</label>
+            <br>
+            <label>
+              <input type="radio" name="flavor" value="coke" checked>
+              coke
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="pepsi">
+              pepsi
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="rc">
+              rc cola
+            </label>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+
+        <br>
+
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
     </form>
 
   </body>

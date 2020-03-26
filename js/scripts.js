@@ -8,4 +8,8 @@ $(document).ready(function() {
 
   var favoriteColor = $("#color").val();
 
+  $('form#theForm').submit(function(event){
+    event.preventDefault();
+
+  });
 });
